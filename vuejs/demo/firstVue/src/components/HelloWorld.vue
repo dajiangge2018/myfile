@@ -9,6 +9,8 @@
       </li>
 
     </ul>
+    <br>
+    <span v-text="ifMsg"></span>
   </div>
 </template>
 
@@ -18,11 +20,14 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      items:[{name:'jack',age:'22'},{name:'tim',age:'21'}]
+      items:[{name:'jack',age:'22'},{name:'tim',age:'21'}],
+      ifMsg:'it is a if msg'
     }
     
   }
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
